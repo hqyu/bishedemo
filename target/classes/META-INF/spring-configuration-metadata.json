@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.biye.demo.config.DruidConfig",
+      "sourceMethod": "druid()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.datasource.filters",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.filters."
+    },
+    {
+      "name": "spring.datasource.time-between-evict-runs-millis",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.time-between-evict-runs-millis."
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bysheji?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: yhq970818
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+    filters: stat,wall
+    initial-size: 1
+    min-idle: 1
+    max-active: 20
+    max-wait: 60000
+    time-between-evict-runs-millis: 300000
+    validation-query: SELECT 'X'
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false
+    pool-prepared-statements: false
+    max-pool-prepared-statement-per-connection-size: 20
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp
+      suffix: .jsp
+
+mybatis:
+  type-aliases-package: com.biye.demo.mapper
